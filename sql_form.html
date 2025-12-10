@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body style="font-family: sans-serif; padding: 40px; max-width: 600px;">
+<h2>Run SQL on Render Postgres</h2>
+
+<form action="/run" method="post">
+<textarea name="sql" style="width: 100%; height: 200px; font-size: 14px;">
+</textarea>
+<br><br>
+<button type="submit" style="padding: 10px 20px;">Run SQL</button>
+</form>
+
+{% if result %}
+<p><strong>Result:</strong> {{ result }}</p>
+{% endif %}
+</body>
+</html>
